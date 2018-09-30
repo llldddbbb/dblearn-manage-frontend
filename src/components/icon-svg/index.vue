@@ -9,36 +9,36 @@
 </template>
 
 <script>
-  export default {
-    name: 'icon-svg',
-    props: {
-      name: {
-        type: String,
-        required: true
-      },
-      className: {
-        type: String
-      },
-      width: {
-        type: String
-      },
-      height: {
-        type: String
-      }
+export default {
+  name: 'icon-svg',
+  props: {
+    name: {
+      type: String,
+      required: true
     },
-    computed: {
-      getName () {
-        return `#icon-${this.name}`
-      },
-      getClassName () {
-        return [
-          'icon-svg',
-          `icon-svg__${this.name}`,
-          this.className && /\S/.test(this.className) ? `${this.className}` : ''
-        ]
-      }
+    className: {
+      type: String
+    },
+    width: {
+      type: String
+    },
+    height: {
+      type: String
+    }
+  },
+  computed: {
+    getName () {
+      return `#icon-${this.name}`
+    },
+    getClassName () {
+      return [
+        'icon-svg',
+        `icon-svg__${this.name}`,
+        this.className && /\S/.test(this.className) ? `${this.className}` : ''
+      ]
     }
   }
+}
 </script>
 
 <style>

@@ -16,6 +16,9 @@
   "dependencies": {
     "axios": "0.17.1",
     "element-ui": "2.3.2",
+    "node-sass": "4.9.0",
+    "sass-loader": "6.0.6",
+    "svg-sprite-loader": "3.7.3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vue-cookie": "1.1.4",
